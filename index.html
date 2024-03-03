@@ -1,62 +1,84 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Page</title>
+<html lang="en" dir="ltr">
+  <head>   
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="img/aboutme/favicon.ico.png" rel="shortcut icon">
+    <script src="https://kit.fontawesome.com/ef4b6767a3.js" crossorigin="anonymous"></script>
+    <meta name="author" content="Mrunal Kumavat">
+    <meta name="description" content="Mrunal Kumavat UI/UX Portfolio">
+    <title>Home Page</title>              
   </head>
 
+
   <body>
-    <header>
-      <div>
-        <img src="img/img1x/websitelogo.svg" alt="logo" />
-        <nav>
-          <ul>
-            <li><a href="index.html">Work</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="#contact">Contact</a></li>
+    <a id="top"></a>
+    <header id="navigation"> <!-- For the header -->
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html">
+            <img class="logo" href="index.html"><img src="img/img1x/websitelogo.svg" class="logo" alt="Mrunal Kumavat">
+          </a>
+          <div class="pullUp">
+				<nav> <!-- For the navigation -->
+					<ul>
+						<li><a href="index.html">Work</a></li>
+						<li><a href="about.html">About</a></li>
+						<li><a href="#contact" onclick="menuToggle()">Contact</a></li>
             <li><a href="files/MrunalKumavat_Resume_.pdf" target="_blank">Resume</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+						<li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+	</header>
 
-    <main>
-      <div>
-        <div>
-          <h1>Hi✨! I'm Mrunal, UX/UI Designer & Researcher</h1>
-          <span
-            >With the soul of an artist and the mind of an engineer, crafting
-            interfaces where form befriends function and every pixel tells a
-            story.</span>
-        </div>
+  <main>
+    <div id="hero">
+      <div class="container">
+        <h1 >Hi✨! I'm Mrunal,</h1>
+        <h3>A UX/UI Designer & Researcher based in San Francisco. I design beautiful and thoughtful digital experiences</h3>
+        <h3>With the soul of an artist and the mind of an engineer, crafting
+          interfaces where form befriends function and every pixel tells a
+          story.</h3>
       </div>
+    </div>
+  
+    <!-- For my work/projects -->
 
-      <div>
-        <h2>My work</h2>
-        <div>
-          <div>
-            <div>
-              <picture>
-                <source srcset="img/img1x/exploreease_wallaper.png" media="max-width:767px" />
-                <img src="img/img2x/exploreease_wallaper.png" alt="ExploreEase" />
-              </picture>
-            </div>
-            <div>
-              <h3>ExploreEase</h3>
-              <p>Enhancing Real-Time Local Exploration & Planning Platform</p>
-              <a href="explore_ease.html">Read Case Study</a>
-            </div>
+    <div id="work"> 
+      <h2>My work</h2>
+      <div class="container">
+        <div class="row">
+          <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/img1x/exploreease_wallaper.png" media="max-width:767px" class="coverpic">
+              <img src="img/img2x/exploreease_wallaper.png" alt="ExploreEase" class="coverpic">
+            </picture>
           </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3>ExploreEase</h3>
+            <p>Enhancing Real-Time Local Exploration & Planning Platform</p>
+            <a href="explore_ease.html">Read Case Study</a>
+          </div>
+        </div> <!-- Project 1 -->
 
-          <div>
-            <div>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/img1x/taskbuddy_wallaper.png" media="(max-width:767px)">
-                <img src="img/img2x/taskbuddy_wallaper.png" alt="Taskbuddy" />
+                <source srcset="img/img1x/taskbuddy_wallaper.png" media="(max-width:767px)" class="coverpic">
+                <img src="img/img2x/taskbuddy_wallaper.png" alt="Taskbuddy" class="coverpic">
               </picture>
             </div>
-            <div>
+            <div class="column col-md-6 col-lg-5">
               <h3>TaskBuddy</h3>
               <p>
                 Streamline family life with Time Management App for Simplifying
@@ -65,29 +87,33 @@
               <a href="#">Read Case Study</a>
             </div>
           </div>
+        </div>
+        </div> <!-- Project 2 -->
 
-          <div>
-            <div>
-              <picture>
-                <source srcset="img/img1x/amc_theaters_wallaper.png" media="(max-width:767px)">
-                <img src="img/img2x/amc_theaters_wallaper.png" alt="AMC Theaters" />
-              </picture>
-            </div>
-            <div>
-              <h3>AMC Theaters</h3>
-              <p>Ticket Booking and Food Ordering and Online Shopping Experience</p>
-              <a href="#">Read Case Study</a>
-            </div>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
+            <picture>
+              <source srcset="img/img1x/amc_theaters_wallaper.png" media="(max-width:767px)"class="coverpic">
+              <img src="img/img2x/amc_theaters_wallaper.png" alt="AMC Theaters" class="coverpic">
+            </picture>
           </div>
+          <div class="column col-md-6 col-lg-5">
+            <h3>AMC Theaters</h3>
+            <p>Ticket Booking and Food Ordering and Online Shopping Experience</p>
+            <a href="#">Read Case Study</a>
+          </div>
+        </div> <!-- Project 3 -->
 
-          <div>
-            <div>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/img1x/silai_designs_wallaper.png" media="(max-width:767px)">
-                <img src="img/img2x/silai_designs_wallaper.png" alt="Silai Designs"/>
+                <source srcset="img/img1x/silai_designs_wallaper.png" media="(max-width:767px)" class="coverpic">
+                <img src="img/img2x/silai_designs_wallaper.png" alt="Silai Designs" class="coverpic">
               </picture>
             </div>
-            <div>
+            <div class="column col-md-6 col-lg-5">
               <h3>Silai Designs</h3>
               <p>
                 Empowering every fashion and vintage lover to showcase, sell,
@@ -96,15 +122,17 @@
               <a href="#">Read Case Study</a>
             </div>
           </div>
+        </div> <!-- Project 4 -->
 
-          <div>
-            <div>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/img1x/vita_care_wallaper.png" media="(max-width:767px)">
-                <img src="img/img2x/vita_care_wallaper.png" alt="Vita Care" />
+                <source srcset="img/img1x/vita_care_wallaper.png" media="(max-width:767px)" class="coverpic">
+                <img src="img/img2x/vita_care_wallaper.png" alt="Vita Care" class="coverpic">
               </picture>
             </div>
-            <div>
+            <div class="column col-md-6 col-lg-5">
               <h3>Vita Care</h3>
               <p>
                 The virtual healthcare experience for individuals seeking
@@ -113,15 +141,17 @@
               <a href="#">Read Case Study</a>
             </div>
           </div>
+        </div> <!-- Project 5 -->
 
-          <div>
-            <div>
+        <div class="container">
+          <div class="row">
+            <div class="column col-md-6 col-lg-7">
               <picture>
-                <source srcset="img/img1x/talkspace_wallaper.png" media="(max-width:767px)">
-                <img src="img/img2x/talkspace_wallaper.png" alt="TalkSpace" />
-            </picture>
+                <source srcset="img/img1x/talkspace_wallaper.png" media="(max-width:767px)" class="coverpic">
+                <img src="img/img2x/talkspace_wallaper.png" alt="TalkSpace" class="coverpic">
+              </picture>
             </div>
-            <div>
+            <div class="column col-md-6 col-lg-5"> 
               <h3>TalkSpace</h3>
               <p>
                 The virtual healthcare experience for individuals seeking
@@ -130,31 +160,47 @@
               <a href="#">Read Case Study</a>
             </div>
           </div>
-        </div>
-      </div>
-    </main>
+        </div> <!-- Project 6 -->
+  </main>
 
-    <footer id="contact">
-      <div>
+  <footer id="contact">
+    <div class="container">
+      <div class="row">
         <h2>Let's get in touch</h2>
         <p>Please contact me if you have any questions or inquieries</p>
+        <a href="https://www.linkedin.com/in/mrunalkumavat/" class="social" target="_blank">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="7" fill="#212121" />
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M15.429 14.969H19.143V16.819C19.678 15.755 21.05 14.799 23.111 14.799C27.062 14.799 28 16.917 28 20.803V28H24V21.688C24 19.475 23.465 18.227 22.103 18.227C20.214 18.227 19.429 19.572 19.429 21.687V28H15.429V14.969V14.969ZM8.57 27.83H12.57V14.799H8.57V27.83V27.83ZM13.143 10.55C13.1431 10.8853 13.0767 11.2172 12.9474 11.5266C12.8181 11.8359 12.6287 12.1165 12.39 12.352C11.9064 12.8326 11.2518 13.1017 10.57 13.1C9.88939 13.0995 9.23631 12.8312 8.752 12.353C8.51421 12.1167 8.32539 11.8358 8.19634 11.5264C8.0673 11.217 8.00058 10.8852 8 10.55C8 9.873 8.27 9.225 8.753 8.747C9.23689 8.26816 9.89024 7.9997 10.571 8C11.253 8 11.907 8.269 12.39 8.747C12.872 9.225 13.143 9.873 13.143 10.55Z"
+              fill="white" />
+          </svg>
+        </a>
+        <a href="https://www.behance.net/mrunalkumavat" class="social" target="_blank">
+          <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <rect width="36" height="36" rx="7" fill="#212121" />
+            <path
+              d="M21.364 11.9261H26.8537V13.2762H21.364V11.9261ZM15.8633 17.2678C17.0768 16.6792 17.7124 15.7838 17.7124 14.4003C17.7124 11.6639 15.7037 11 13.384 11H7V24.735H13.5629C16.0229 24.735 18.3316 23.5356 18.3316 20.7462C18.3316 19.0223 17.5281 17.7476 15.8633 17.2678V17.2678ZM9.97736 13.3431H12.7704C13.8463 13.3431 14.8121 13.6471 14.8121 14.9135C14.8121 16.0795 14.0609 16.5481 12.996 16.5481H9.97736V13.3431ZM13.1556 22.4031H9.97461V18.6206H13.2189C14.5287 18.6206 15.357 19.1757 15.357 20.5816C15.357 21.9651 14.3691 22.4031 13.1556 22.4031V22.4031ZM29 19.9066C29 16.9637 27.3022 14.5119 24.2313 14.5119C21.2457 14.5119 19.2149 16.7908 19.2149 19.7782C19.2149 22.8745 21.1383 25 24.2313 25C26.573 25 28.0892 23.9317 28.8184 21.6527H26.4437C26.185 22.5035 25.1338 22.9498 24.3166 22.9498C22.7371 22.9498 21.9116 22.0126 21.9116 20.4198H28.9807C28.989 20.2552 29 20.0823 29 19.9066V19.9066ZM21.9116 18.696C21.9969 17.3877 22.8582 16.5704 24.146 16.5704C25.4998 16.5704 26.1767 17.3766 26.2951 18.696H21.9116Z"
+              fill="white" />
+          </svg>
+        </a>
+        <p><a href="mrunnuk@gmail.com" class="email link text-underlined">Send me an e-mail</a></p>
 
-        <div><a href="">Email me</a></div>
+      <!-- <div>
+        <a href="https://www.linkedin.com/in/mrunalkumavat/" target="_blank">
+          <img src="img/svg/linkedin-icon.svg" />
+        </a>
+        <a href="https://www.behance.net/mrunalkumavat" target="_blank">
+          <img src="img/svg/behance-icon.svg" />
+        </a>
+        <a href="https://www.instagram.com/mrunal.arts/" target="_blank">
+          <img src="img/svg/instagram-icon.svg"/>
 
-        <div>
-          <a href="https://www.linkedin.com/in/mrunalkumavat/" target="_blank">
-            <img src="img/svg/linkedin-icon.svg" />
-          </a>
-          <a href="https://www.behance.net/mrunalkumavat" target="_blank">
-            <img src="img/svg/behance-icon.svg" />
-          </a>
-          <a href="https://www.instagram.com/mrunal.arts/" target="_blank">
-            <img src="img/svg/instagram-icon.svg" />
-          </a>
-        </div>
-
-        <div>Copyright Mrunal Kumavat 2024</div>
-      </div>
-    </footer>
-  </body>
+        </a>
+      </div> -->
+    </div>
+  </div>
+  <p>Copyright Mrunal Kumavat 2024</p>
+  </footer>
+</body>
 </html>
