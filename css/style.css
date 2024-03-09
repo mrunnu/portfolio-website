@@ -247,6 +247,11 @@ a {
     border-bottom: 1px solid rgba(22, 16, 31, 0.3);
   }
   
+  #work .row {
+    padding-bottom: 25px;
+    border-bottom: 1px solid rgba(22, 16, 31, 0.3);
+  }
+  
   #contact {
     text-align: center;
   }
@@ -259,6 +264,55 @@ a {
   #contact p {
     padding: 25px;
     font-size: 0.75em;
+  }
+  
+  /*social media icons*/
+  .social {
+    padding: 20px;
+  }
+  
+  .social:hover {
+    opacity: 0.5;
+  }
+  
+  /*email link*/
+  .email {
+    font-size: 1.50em;
+    text-transform: uppercase;
+    max-width: 80%;
+  }
+  
+  .email {
+    color: #800080;
+    position: relative;
+    text-decoration: none;
+    transition: color .4s ease-out;
+  }
+  
+  .email:hover {
+    color: #800080;
+    right: 0;
+    text-decoration: none;
+  }
+  
+  .email:hover:after {
+    border-color: #800080;
+    right: 0;
+  }
+  
+  .email:after {
+    border-radius: 1em;
+    border-top: .1em solid #800080;
+    content: "";
+    position: absolute;
+    right: 100%;
+    bottom: .14em;
+    left: 0;
+    transition: right .4s cubic-bezier(0, .5, 0, 1);
+  }
+  
+  .email:hover:after {
+    right: 0;
   }
   
 /*social media icons*/
@@ -618,7 +672,7 @@ Medium devices (640px and larger)
     }
   }
 
-  
+
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
