@@ -399,6 +399,7 @@ color: #2C1002;
 
 .text-container {
 text-align: left;
+padding: 0 40px;
 }
 
 .content-container {}
@@ -628,7 +629,7 @@ Medium devices (640px and larger)
 @media only screen and (min-width: 640px) {
     header {
       position: relative;
-      text-align: unset;
+      text-align: center;
       padding: 20px 0 20px;
     }
   
@@ -691,7 +692,9 @@ padding-top: 30px;
 }
 
 .text-container {
-padding: 50px 240px;
+padding: 50px 0;
+max-width: 1160px;
+margin: 0 auto;
 }
   
 .col-lg-4 {
@@ -755,10 +758,6 @@ X-large devices (1440px or larger)
 body {
     font-size: 14px;
     font-weight: 400;
-}
-
-.text-container {
-    padding: 50px 240px;
 }
 
 .col-lg-7 {
