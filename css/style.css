@@ -133,7 +133,7 @@ a {/* element selector */
 
 
   /* Layout styling */
-  
+
   .container {
     padding: 0 40px;
   }
@@ -684,7 +684,7 @@ width: 25%;
 }
 
 body {
-    font-size: 14px;
+    font-size: 18px;
     font-weight: 400;
 }
 
@@ -693,7 +693,7 @@ padding-top: 30px;
 }
 
 .text-container {
-padding: 50px 0;
+padding: 10px 10px;
 max-width: 1160px;
 margin: 0 auto;
 }
