@@ -1,6 +1,6 @@
-alert("Hello world");
-console.log("Hello world");
-console.log("Hi! Welcome to My Portfolio Site")
+// alert("Hello world");
+// console.log("Hello world");
+// console.log("Hi! Welcome to My Portfolio Site")
 
 function menuToggle() {
     var x = document.getElementById('myNavtoggle');
