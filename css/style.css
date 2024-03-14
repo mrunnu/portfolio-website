@@ -400,7 +400,7 @@ color: #2C1002;
 
 .text-container {
 text-align: left;
-padding: 0 40px;
+padding: 0 50px;
 }
 
 .content-container {}
@@ -623,21 +623,21 @@ background-color: #555;
 }
 
 
-
+/*media queries*/
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
 @media only screen and (min-width: 640px) {
     header {
       position: relative;
-      text-align: center;
+      text-align: unset;
       padding: 20px 0 20px;
     }
   
     nav {
       width: auto;
       float: right;
-      margin-top: 70px;
+      margin-top: 40px;
     }
   
     .navtoggle.responsive li {
@@ -679,99 +679,59 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-.col-lg-3 {
-width: 25%;
-}
-
-body {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-main {
-padding-top: 30px;
-}
-
-.text-container {
-padding: 10px 10px;
-max-width: 1160px;
-margin: 0 auto;
-}
+    body {
+      font-size: 18px;
+      font-weight: 400;
+    }
   
-.col-lg-4 {
-width: 33.33%;
-}
-
-.col-lg-5 {
-width: 41.66%;
-}
-
-.col-lg-7 {
-width: 58.33%;
-padding-bottom: 32px;
-}
-
-.col-lg-12 {
-width: 100%;
-margin-top: -18px;
-}
-
-.col-lg-12-skills {
-width: 100%;
-margin-top: -18px;
-float: left;
-padding: 0 20px 40px;
-}
-
-.container {
-max-width: 1200px;
-margin-left: auto;
-margin-right: auto;
-padding: 0 16px;
-}
-
-.learnings h4 {
-margin: 40px 0 0 0;
-font-weight: 700;
-font-size: 1.6em;
-}
-
-#project-background h2,
-#project-process h2 {
-font-size: 2.5em;
-}
-
-.process img {
-padding: 24px 48px;
-}
-
-.skills-tools h2 {
-text-align: center;
-padding: 8px 0;
-margin: 32px 0 16px 0;
-}
-}
+    main {
+      padding-top: 30px;
+      margin-top: 10px;
+    }
+  
+    .text-container {
+        padding: 40px 100px;
+    }
+  
+    .col-lg-7 {
+      width: 60.33%;
+    }
+  
+    .col-lg-5 {
+      width: 41.66%;
+    }
+  
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
 
 /* ==============================
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-body {
-    font-size: 14px;
-    font-weight: 400;
-}
-
-.col-lg-7 {
-    width: 58.33%;
-}
-
-.col-lg-5 {
-    width: 41.66%;
-}
-
-.container {
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
-}
-}
+    body {
+      font-size: 18px;
+      font-weight: 400;
+    }
+  
+    .text-container {
+      padding: 40px 100px;
+    }
+  
+    .col-lg-7 {
+      width: 58.33%;
+    }
+  
+    .col-lg-5 {
+      width: 41.66%;
+    }
+  
+    .container {
+      max-width: 1200px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
