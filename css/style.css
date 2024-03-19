@@ -6,19 +6,19 @@
 header {
     position: fixed;
     width: 100%;
-    background-color: #fdf7ed;
+    background-color: #FCF9F5;
     padding: 10px 0 4px;
     position: relative;
     box-shadow: 0px 6px 10px 0px rgba(229, 229, 229, 0.5);
 } 
 
 body {
-    background-color: #fdf7ed;
+    background-color: #FCF9F5;
     font-family: 'Poppins', sans-serif;
-    font-size: 16px; /* Sets the font size to 16px */
+    font-size: 18px; /* Sets the font size to 16px */
     font-weight: 400; /* Sets the font weight to 400 */
     line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-    color: #143a52;
+    color: #212121;
 }
 
 img {
@@ -61,7 +61,7 @@ font-weight: 600;
 
 .button {
   display: inline-block; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-  background-color: #ff7f50;
+  background-color: #212121;
   color: #ffffff; /* needed to override the default link color */
   font-weight: 400;
   padding: 10px;
@@ -72,7 +72,7 @@ font-weight: 600;
 
 .button:visited {
   /* Visited link */
-  color: #fdf7ed;
+  color: #FCF9F5;
 }
 
 .button:hover,
@@ -89,20 +89,20 @@ font-weight: 600;
 .button.contact,
 .button.resume {
   background-color: transparent;
-  color: #143a52;
+  color: #212121;
   text-transform: uppercase;
-  border: 2px solid #143a52;
+  border: 2px solid #212121;
   transition: 0.2s background-color, font-weight;
 }
 
 .button.contact:visited,
 .button.resume:visited {
   /* Visited link */
-  color: #143a52;
+  color: #212121;
 }
 
 .button.contact:hover {
-    background-color: #ff7f50;
+    background-color: #212121;
     color: #ffffff;
   }
 
@@ -116,7 +116,7 @@ font-weight: 600;
 .button.contact:active,
 .button.resume:active {
   /* Selected link */
-  color: #fdf7ed;
+  color: #FCF9F5;
 }
 
 a {/* element selector */
@@ -152,7 +152,7 @@ a {/* element selector */
 
 /*nav*/
 a {
-    color: #800080;
+    color: #018F8C;
     text-decoration: none;
     font-weight: 700;
     transition-duration: 0.6s;
@@ -166,12 +166,12 @@ a {
   
   a:visited,
   a:focus {
-    color: #800080;
+    color: #018F8C;
   }
   
   a:active,
   a:focus {
-    color: #800080;
+    color: #018F8C;
   }
   
   nav>ul {
@@ -284,26 +284,26 @@ a {
   }
   
   .email {
-    color: #800080;
+    color: #018F8C;
     position: relative;
     text-decoration: none;
     transition: color .4s ease-out;
   }
   
   .email:hover {
-    color: #800080;
+    color: #018F8C;
     right: 0;
     text-decoration: none;
   }
   
   .email:hover:after {
-    border-color: #800080;
+    border-color:#018F8C;
     right: 0;
   }
   
   .email:after {
     border-radius: 1em;
-    border-top: .1em solid #800080;
+    border-top: .1em solid #018F8C;
     content: "";
     position: absolute;
     right: 100%;
@@ -333,26 +333,26 @@ a {
   }
   
   .email {
-    color: #800080;
+    color: #018F8C;
     position: relative;
     text-decoration: none;
     transition: color .4s ease-out;
   }
   
   .email:hover {
-    color: #800080;
+    color: #018F8C;
     right: 0;
     text-decoration: none;
   }
   
   .email:hover:after {
-    border-color: #800080;
+    border-color: #018F8C;
     right: 0;
   }
   
   .email:after {
     border-radius: 1em;
-    border-top: .1em solid #800080;
+    border-top: .1em solid #018F8C;
     content: "";
     position: absolute;
     right: 100%;
@@ -540,8 +540,8 @@ text-align: center;
 
 .resumebutton, .resumebutton:visited {
 display: inline-block;
-background-color: #800080;
-border: 2px solid #800080;
+background-color: #018F8C;
+border: 2px solid #018F8C;
 color: white;
 font-size: 16px;
 text-decoration: none;
@@ -554,15 +554,15 @@ border-radius: 8px;
 
 .resumebutton:hover {
 background-color: white;
-border: 2px solid #800080;
-color: #800080;
+border: 2px solid #018F8C;
+color: #018F8C;
 }
 
 /*View Project buttons*/
 .button, .button:visited {
 display: inline-block;
-background-color: #800080;
-border: 2px solid #800080;
+background-color: #018F8C;
+border: 2px solid #018F8C;
 color: rgb(251, 223, 198);
 font-size: 14px;
 text-decoration: none;
@@ -575,14 +575,14 @@ border-radius: 8px;
 
 .button:after {
 background-color: white;
-border: 2px solid #800080;
-color: #800080;
+border: 2px solid #018F8C;
+color: #018F8C;
 }
 
 .button:hover {
 background-color: white;
-border: 2px solid #800080;
-color: #800080;
+border: 2px solid #018F8C;
+color: #018F8C;
 }
 
 .button:hover:after {
@@ -605,7 +605,7 @@ border: none;
 /* Remove borders */
 outline: none;
 /* Remove outline */
-background-color: #800080;
+background-color: #018F8C;
 /* Set a background color */
 color: white;
 /* Text color */
