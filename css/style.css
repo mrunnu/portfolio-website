@@ -66,7 +66,7 @@ font-weight: 600;
   font-weight: 400;
   padding: 10px;
   border-radius: 3px;
-  border-bottom: 2px solid #994c30; /* width of the border, type, color */
+  border-bottom: 2px solid #800080; /* width of the border, type, color */
   transition: 0.2s opacity;
 }
 
@@ -152,7 +152,7 @@ a {/* element selector */
 
 /*nav*/
 a {
-    color: #B65937;
+    color: #800080;
     text-decoration: none;
     font-weight: 700;
     transition-duration: 0.6s;
@@ -166,12 +166,12 @@ a {
   
   a:visited,
   a:focus {
-    color: #B65937;
+    color: #800080;
   }
   
   a:active,
   a:focus {
-    color: #B65937;
+    color: #800080;
   }
   
   nav>ul {
@@ -284,26 +284,26 @@ a {
   }
   
   .email {
-    color: #B65937;
+    color: #800080;
     position: relative;
     text-decoration: none;
     transition: color .4s ease-out;
   }
   
   .email:hover {
-    color: #B65937;
+    color: #800080;
     right: 0;
     text-decoration: none;
   }
   
   .email:hover:after {
-    border-color:#B65937;
+    border-color:#800080;
     right: 0;
   }
   
   .email:after {
     border-radius: 1em;
-    border-top: .1em solid #B65937;
+    border-top: .1em solid #800080;
     content: "";
     position: absolute;
     right: 100%;
@@ -333,26 +333,26 @@ a {
   }
   
   .email {
-    color: #B65937;
+    color: #800080;
     position: relative;
     text-decoration: none;
     transition: color .4s ease-out;
   }
   
   .email:hover {
-    color: #B65937;
+    color: #800080;
     right: 0;
     text-decoration: none;
   }
   
   .email:hover:after {
-    border-color: #B65937;
+    border-color: #800080;
     right: 0;
   }
   
   .email:after {
     border-radius: 1em;
-    border-top: .1em solid #B65937;
+    border-top: .1em solid #800080;
     content: "";
     position: absolute;
     right: 100%;
@@ -540,8 +540,8 @@ text-align: center;
 
 .resumebutton, .resumebutton:visited {
 display: inline-block;
-background-color: #B65937;
-border: 2px solid #B65937;
+background-color: #800080;
+border: 2px solid #800080;
 color: white;
 font-size: 16px;
 text-decoration: none;
@@ -554,15 +554,15 @@ border-radius: 8px;
 
 .resumebutton:hover {
 background-color: white;
-border: 2px solid #B65937;
-color: #B65937;
+border: 2px solid #800080;
+color: #800080;
 }
 
 /*View Project buttons*/
 .button, .button:visited {
 display: inline-block;
-background-color: #B65937;
-border: 2px solid #B65937;
+background-color: #800080;
+border: 2px solid #800080;
 color: rgb(251, 223, 198);
 font-size: 14px;
 text-decoration: none;
@@ -575,14 +575,14 @@ border-radius: 8px;
 
 .button:after {
 background-color: white;
-border: 2px solid #B65937;
-color: #B65937;
+border: 2px solid #800080;
+color:#800080;
 }
 
 .button:hover {
 background-color: white;
-border: 2px solid #B65937;
-color: #B65937;
+border: 2px solid #800080;
+color: #800080;
 }
 
 .button:hover:after {
@@ -605,7 +605,7 @@ border: none;
 /* Remove borders */
 outline: none;
 /* Remove outline */
-background-color: #B65937;
+background-color: #800080;
 /* Set a background color */
 color: white;
 /* Text color */
